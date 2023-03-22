@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
+.navContainer {
+  background-color: white;
+}
+
+.mainLogo {
+  font-size: 20px;
+  font-family: "Chivo";
+  font-weight: 700;
+}
+
+.navItem {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.activeNavItem {
+  color: #7e52ff;
+}

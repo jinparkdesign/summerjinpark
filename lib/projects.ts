@@ -15,11 +15,12 @@ export function getAllProjects(): Array<Project> {
   return [
     {
       id: "flightCentre",
-      title: "Flight Centre Travel Group",
-      description: "business travel management booking platform",
-      startYear: "2021",
+      title: "Split Ticketing",
+      description:
+        "A business travel management booking platform that makes business travel easier.",
+      startYear: "2022",
       endYear: "2023",
-      tags: ["Responsive web", "Product design"],
+      tags: ["Responsive web", "UX/UI"],
       thumbnail: "",
     },
     {
@@ -30,6 +31,16 @@ export function getAllProjects(): Array<Project> {
       startYear: "2022",
       endYear: "Present",
       tags: ["Mobile native app", "Product design"],
+      thumbnail: "",
+    },
+    {
+      id: "hotelRedesign",
+      title: "Hotel Redesign",
+      description:
+        "A business travel management booking platform that makes business travel easier.",
+      startYear: "2021",
+      endYear: "2022",
+      tags: ["Responsive web", "UX/UI"],
       thumbnail: "",
     },
     {

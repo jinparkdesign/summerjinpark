@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
 .projectContainer {
   padding: 48px 80px;
   border-radius: 10px;
@@ -8,11 +9,21 @@
 }
 
 .miuuNote {
-  background: linear-gradient(143.4deg, #cab8ff 25.84%, #fcffa6 150.32%);
+  background: linear-gradient(143.4deg, #efeaff 25.84%, #feffdb 150.32%);
 }
 
 .visualDesign {
   background: linear-gradient(150.4deg, #ffffdd -49.3%, #ffd5e5 91%);
+}
+
+.hotelRedesign {
+  background: linear-gradient(121.87deg, #def6ed -10.54%, #fff7f7 98.97%);
+}
+
+.projectTitle {
+  font-family: "Chivo", "Public_sans";
+  font-weight: 700;
+  font-size: 36px;
 }
 
 .durationContainer {
@@ -25,9 +36,4 @@
   padding: 4px 16px;
   font-size: 14px;
   color: #4f4f4f;
-}
-
-.cta {
-  background-color: #000000;
-  padding: 20px 48px;
 }

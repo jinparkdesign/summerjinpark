@@ -11,11 +11,11 @@ const HomePage = () => {
 
   return (
     <>
-      <Header />
+      <Header activePage="home" />
       <MainHeader />
 
-      <div className="row mb-3">
-        <h3 className={`${styles.featuredProjectHeader} fs-6 ps-0 mb-0`}>
+      <div className="row mb-3" id="work">
+        <h3 className={`${styles.featuredProjectHeader} fs-6  mb-0`}>
           Featured Projects
         </h3>
       </div>

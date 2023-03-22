@@ -8,7 +8,7 @@ const Footer = () => {
     >
       <p>Thank you for your time! Please feel free to contact me.</p>
       <div className="d-flex">
-        <a href="#">
+        <a href="https://www.linkedin.com/in/jinparkdesign/" target="_blank">
           <Image
             src="/../public/LinkedinLogo.png"
             alt="LinkedIn Logo"

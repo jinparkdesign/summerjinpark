@@ -1,9 +1,14 @@
-const Header = () => {
+import Link from "next/link";
+import styles from "./../styles/header.module.css";
+
+const Header = ({ activePage }: { activePage: string }) => {
   return (
-    <nav className="navbar sticky-top navbar-expand-md navbar-light bg-light">
-      <div className="container-fluid">
+    <nav
+      className={`navbar sticky-top navbar-expand-md navbar-light ${styles.navContainer}`}
+    >
+      <div className="container-fluid ps-0">
         <a className="navbar-brand" href="#">
-          Summer Park
+          <span className={styles.mainLogo}>Summer Park</span>
         </a>
         <button
           className="navbar-toggler"
@@ -19,15 +24,39 @@ const Header = () => {
       </div>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav me-auto mb-2 mb-lg-0">
-          <a className="nav-link active" aria-current="page" href="#">
+          <Link
+            className={`nav-link ${styles.navItem} ${
+              activePage === "home" ? styles.activeNavItem : ""
+            } `}
+            aria-current="page"
+            href="/"
+          >
             Home
-          </a>
-          <a className="nav-link" href="#">
-            Work
-          </a>
-          <a className="nav-link" href="#">
+          </Link>
+          {activePage === "home" ? (
+            <a className={`nav-link ${styles.navItem}`} href="#work">
+              Work
+            </a>
+          ) : (
+            <Link
+              className={`nav-link ${styles.navItem} ${
+                activePage === "home" ? styles.activeNavItem : ""
+              } `}
+              aria-current="page"
+              href="/#work"
+            >
+              Work
+            </Link>
+          )}
+
+          <Link
+            className={`nav-link ${styles.navItem} ${
+              activePage === "about" ? styles.activeNavItem : ""
+            }`}
+            href="/about"
+          >
             About
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
