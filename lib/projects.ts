@@ -15,9 +15,9 @@ export function getAllProjects(): Array<Project> {
   return [
     {
       id: "flightCentre",
-      title: "Split Ticketing",
+      title: "FCM - Split Ticketing",
       description:
-        "A business travel management booking platform that makes business travel easier.",
+        "Combine various airlines or fares in one seamless itinerary with the new enhanced air shopping capabilities  -  split ticketing! ",
       startYear: "2022",
       endYear: "2023",
       tags: ["Responsive web", "UX/UI"],

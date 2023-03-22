@@ -48,7 +48,7 @@ const Projects = (project: Project) => {
           <Image
             className="image"
             src={`/../public/${id}-thumbnail.png`}
-            alt="Flight Centre Travel Group"
+            alt={id}
             fill
           />
         </div>

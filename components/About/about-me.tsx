@@ -3,7 +3,7 @@ import styles from "../../styles/aboutMe.module.css";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="mt-5">
       <h2 className={styles.header}>About Me</h2>
 
       <div>
