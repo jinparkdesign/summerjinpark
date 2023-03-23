@@ -4,19 +4,19 @@
   border-radius: 10px;
 }
 
-.flightCentre {
+.FLIGHT_CENTER {
   background: linear-gradient(121.87deg, #d6e5fa -10.54%, #fff9f9 98.97%);
 }
 
-.miuuNote {
+.MIUU_NOTE {
   background: linear-gradient(143.4deg, #efeaff 25.84%, #feffdb 150.32%);
 }
 
-.visualDesign {
+.VISUAL_DESIGN {
   background: linear-gradient(150.4deg, #ffffdd -49.3%, #ffd5e5 91%);
 }
 
-.hotelRedesign {
+.HOTEL_REDESIGN {
   background: linear-gradient(121.87deg, #def6ed -10.54%, #fff7f7 98.97%);
 }
 

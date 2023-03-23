@@ -1,3 +1,10 @@
+export enum ProjectId {
+  FLIGHT_CENTRE = "FLIGHT_CENTER",
+  MIUU_NOTE = "MIUU_NOTE",
+  HOTEL_REDESIGN = "HOTEL_REDESIGN",
+  VISUAL_DESIGN = "VISUAL_DESIGN",
+}
+
 export function getAllProjects(): Array<Project> {
   // Returns an array that looks like this:
   // [
@@ -14,7 +21,7 @@ export function getAllProjects(): Array<Project> {
   // ]
   return [
     {
-      id: "flightCentre",
+      id: ProjectId.FLIGHT_CENTRE,
       title: "FCM - Split Ticketing",
       description:
         "Combine various airlines or fares in one seamless itinerary with the new enhanced air shopping capabilities  -  split ticketing! ",
@@ -24,7 +31,7 @@ export function getAllProjects(): Array<Project> {
       thumbnail: "",
     },
     {
-      id: "miuuNote",
+      id: ProjectId.MIUU_NOTE,
       title: "Miuu Note",
       description:
         "Express your daily thoughts and mood with adorable stickers",
@@ -34,7 +41,7 @@ export function getAllProjects(): Array<Project> {
       thumbnail: "",
     },
     {
-      id: "hotelRedesign",
+      id: ProjectId.HOTEL_REDESIGN,
       title: "Hotel Redesign",
       description:
         "A business travel management booking platform that makes business travel easier.",
@@ -44,7 +51,7 @@ export function getAllProjects(): Array<Project> {
       thumbnail: "",
     },
     {
-      id: "visualDesign",
+      id: ProjectId.VISUAL_DESIGN,
       title: "Visual Design Projects",
       description: "My graphic and visual projects",
       startYear: "2015",

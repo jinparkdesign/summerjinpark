@@ -1,5 +1,5 @@
 interface Project {
-  id: string;
+  id: ProjectId;
   title: string;
   description: string;
   startYear: string;
