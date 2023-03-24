@@ -6,4 +6,9 @@ interface Project {
   endYear: string;
   tags: Array<string>;
   thumbnail: string;
+  route: string;
+  role: string;
+  team: Array<string>;
+  duration: string;
+  tool: string;
 }

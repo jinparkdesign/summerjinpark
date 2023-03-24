@@ -6,18 +6,18 @@ const Achievement = () => {
       <div className="row gx-5">
         <div className="col-md-6">
           <h2 className={styles.header}>My Achievements</h2>
-          <ul>
+          <ul className={styles.achievementList}>
             <li>
-              · Received President's Honour List with the grade of GPA 4.0 in
+              Received President's Honour List with the grade of GPA 4.0 in
               college
             </li>
             <li>
-              · Won Best Designer’s Award in the field of product design at work
+              Won Best Designer’s Award in the field of product design at work
             </li>
             <li>
-              · Reached Social Media Followers 60k+ in Tiktok, 20k+ in Instagram
+              Reached Social Media Followers 60k+ in Tiktok, 20k+ in Instagram
             </li>
-            <li>· Launched Android app and reached10k+ download organically</li>
+            <li>Launched Android app and reached10k+ download organically</li>
           </ul>
         </div>
         <div className="col-md-6">

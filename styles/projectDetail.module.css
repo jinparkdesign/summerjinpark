@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+.projectHeaderContainer {
+  margin-top: 36px;
+}
+.header {
+  font-family: "Chivo";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.durationContainer {
+  font-size: 20px;
+  color: #828282;
+  margin-bottom: 72px;
+}
+
+.projectDetailHeader {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subHeader {
+  font-family: "Chivo";
+  color: #828282;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.projectDetailContainer {
+  margin-top: 80px;
+}
+
+.emphasizedLine {
+  font-family: "Chivo";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.divider {
+  border: 1px solid #bdbdbd;
+}
+
+.subSectionHeader {
+  font-family: "Chivo";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  /* black */
+
+  color: #000000;
+}
+
+.prosLabel {
+  font-family: "Chivo";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7e52ff;
+}
+
+.prosList {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.task {
+  padding: 10px 16px;
+  background: #fff6e9;
+  font-size: 24px;
+  font-family: "Chivo";
+  height: 54px;
+  margin-right: 24px;
+}
+
+.taskLabel {
+  font-family: "Chivo";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.usabilitySubHeader {
+  font-family: "Chivo";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #7e52ff;
+}
+
+.improvementSectionContainer {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 48px 90px;
+}
+
+.improvementSectionSubHeader {
+  font-family: "Chivo";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.improvementSectionVL {
+  border-left: 2px dashed #eb5757;
+  height: 63.5px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.improvementSectionQuote {
+  background: #f2f2f2;
+  padding: 18px 28px;
+  text-align: center;
+}
+
+.improvementSectionMain {
+  font-family: "Chivo";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.improvementSectionSub {
+  font-family: "Chivo";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.fs20fwbold {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.designValidationSectionQuote {
+  background: #f2f2f2;
+  padding: 10px 32px;
+}
+
+.userGoalSection {
+  border: 1px solid #bdbdbd;
+  padding: 27px 24px;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.mt75 {
+  margin-top: 75px;
+}
+
+.purple {
+  color: #7e52ff;
+}
+
+.moreProjectContainer {
+  background: linear-gradient(143.4deg, #efeaff 25.84%, #feffdb 150.32%);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 54px 34px;
+  text-decoration: none;
+}

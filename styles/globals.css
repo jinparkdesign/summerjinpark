@@ -11,7 +11,14 @@
   border-radius: 10px !important;
 }
 
-ul {
-  padding: 0 !important;
-  list-style-type: none;
+p {
+  color: #000000;
+}
+
+.mt-96 {
+  margin-top: 96px !important;
+}
+
+.mt-122 {
+  margin-top: 122px !important;
 }

@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./../styles/project.module.css";
 
 const Projects = (project: Project) => {
-  const { id, title, description, startYear, endYear, tags, thumbnail } =
-    project;
+  const { id, title, description, startYear, endYear, tags, route } = project;
 
   return (
     <div className={`${styles.projectContainer} ${styles[id]}`}>
@@ -31,18 +31,20 @@ const Projects = (project: Project) => {
           </div>
           <h1 className={styles.projectTitle}>{title}</h1>
           <h3 className="mt-3 fs-6">{description}</h3>
-          <button
-            type="button"
-            className={`cta btn btn-dark mt-5 align-items-center d-flex`}
-          >
-            <span className="me-2">View more</span>
-            <Image
-              src="/../public/ArrowRight.png"
-              alt="arrow right"
-              width={24}
-              height={24}
-            />
-          </button>
+          <Link href={route} className="text-decoration-none">
+            <button
+              type="button"
+              className={`cta btn btn-dark mt-5 align-items-center d-flex`}
+            >
+              <span className="me-2">View more</span>
+              <Image
+                src="/../public/ArrowRight.png"
+                alt="arrow right"
+                width={24}
+                height={24}
+              />
+            </button>
+          </Link>
         </div>
         <div className="col-lg-4 justify-content-end d-flex position-relative">
           <Image

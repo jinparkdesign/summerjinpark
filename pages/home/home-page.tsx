@@ -29,7 +29,9 @@ const HomePage = () => {
         );
       })}
 
-      <Footer />
+      <div className="mt-122">
+        <Footer />
+      </div>
     </>
   );
 };
