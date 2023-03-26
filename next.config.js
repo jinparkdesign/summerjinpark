@@ -1,7 +1,6 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
     loader: "akamai",
     path: "",
@@ -9,4 +8,4 @@ const nextConfig = {
   assetPrefix: "./",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
