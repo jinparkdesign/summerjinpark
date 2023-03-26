@@ -10,19 +10,14 @@ const Footer = () => {
       <div className="d-flex">
         <a href="https://www.linkedin.com/in/jinparkdesign/" target="_blank">
           <Image
-            src="/../public/LinkedinLogo.png"
+            src="/LinkedinLogo.png"
             alt="LinkedIn Logo"
             width={32}
             height={32}
           />
         </a>
         <a href="#" className="ms-4">
-          <Image
-            src="/../public/Envelope.png"
-            alt="Email"
-            width={32}
-            height={32}
-          />
+          <Image src="/Envelope.png" alt="Email" width={32} height={32} />
         </a>
 
         <div
@@ -30,7 +25,7 @@ const Footer = () => {
         >
           <a href="#">
             <Image
-              src="/../public/backToTop.png"
+              src="/backToTop.png"
               alt="back to top"
               width={48}
               height={48}

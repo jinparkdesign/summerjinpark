@@ -17,7 +17,7 @@ const MoreProject = (project: Project) => {
           <div className="col-md-6">
             <Image
               className="image"
-              src={`/../public/${id}-thumbnail.png`}
+              src={`/${id}-thumbnail.png`}
               alt={id}
               fill
             />

@@ -9,7 +9,7 @@ const DesignJourney = () => {
       <div className="row">
         <Image
           className="image"
-          src={`/../public/design-journey.png`}
+          src={`/design-journey.png`}
           alt="Flight Centre Travel Group"
           fill
         />

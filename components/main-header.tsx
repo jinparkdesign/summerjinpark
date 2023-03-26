@@ -7,7 +7,7 @@ const MainHeader = () => {
       <div
         className={`${styles.mainHeaderContainer} d-flex flex-column align-items-center`}
       >
-        <Image src="/../public/main.png" alt="" width={500} height={187} />
+        <Image src="/main.png" alt="" width={500} height={187} />
         <p className="mt-4 w-75 text-center fs-5">
           I am a <span className="fw-bold ">visual product designer</span> with
           a passion for creating products that people will absolutely love. With

@@ -25,12 +25,7 @@ const ProjectHeader = (project: Project) => {
         <span>{endYear}</span>
       </div>
 
-      <Image
-        className="image"
-        src={`/../public/${id}-main.png`}
-        alt={id}
-        fill
-      />
+      <Image className="image" src={`/${id}-main.png`} alt={id} fill />
 
       <div className="mt-4">
         <div className="row">

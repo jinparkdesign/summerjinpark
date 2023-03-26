@@ -9,16 +9,11 @@ const AboutMe = () => {
       <div>
         <div className="row">
           <div className="col-md-3">
-            <Image
-              src="/../public/profile.png"
-              alt="Jin Park"
-              fill
-              className="image"
-            />
+            <Image src="/profile.png" alt="Jin Park" fill className="image" />
 
             <div className="d-flex align-items-center mt-4">
               <Image
-                src="/../public/Envelope.png"
+                src="/Envelope.png"
                 alt="Email"
                 width={24}
                 height={24}
@@ -32,7 +27,7 @@ const AboutMe = () => {
 
             <div className="d-flex align-items-center mt-3">
               <Image
-                src="/../public/MapPin.png"
+                src="/MapPin.png"
                 alt="Email"
                 width={24}
                 height={24}
