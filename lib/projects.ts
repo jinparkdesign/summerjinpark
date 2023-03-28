@@ -62,7 +62,7 @@ export function getAllProjects(): Array<Project> {
       route: "fcm-split-ticketing",
       role: "UX/UI Design Solo",
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
-      duration: "7 Months",
+      duration: "5 Months",
       tool: "Figma",
     },
     {
