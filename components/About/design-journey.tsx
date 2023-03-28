@@ -1,5 +1,6 @@
 import styles from "../../styles/aboutMe.module.css";
 import Image from "next/image";
+import designJourney from "@/public/design-journey.png";
 
 const DesignJourney = () => {
   return (
@@ -9,7 +10,7 @@ const DesignJourney = () => {
       <div className="row">
         <Image
           className="image"
-          src={`/design-journey.png`}
+          src={designJourney}
           alt="Flight Centre Travel Group"
           fill
         />

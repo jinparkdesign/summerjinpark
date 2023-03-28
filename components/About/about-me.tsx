@@ -1,5 +1,8 @@
 import Image from "next/image";
 import styles from "../../styles/aboutMe.module.css";
+import Envelope from "@/public/Envelope.png";
+import profile from "@/public/profile.png";
+import MapPin from "@/public/MapPin.png";
 
 const AboutMe = () => {
   return (
@@ -9,11 +12,11 @@ const AboutMe = () => {
       <div>
         <div className="row">
           <div className="col-md-3">
-            <Image src="/profile.png" alt="Jin Park" fill className="image" />
+            <Image src={profile} alt="Jin Park" fill className="image" />
 
             <div className="d-flex align-items-center mt-4">
               <Image
-                src="/Envelope.png"
+                src={Envelope}
                 alt="Email"
                 width={24}
                 height={24}
@@ -27,7 +30,7 @@ const AboutMe = () => {
 
             <div className="d-flex align-items-center mt-3">
               <Image
-                src="/MapPin.png"
+                src={MapPin}
                 alt="Email"
                 width={24}
                 height={24}

@@ -1,3 +1,4 @@
+import { getProjectThumbnail } from "@/lib/projectImages";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/projectDetail.module.css";
@@ -17,7 +18,7 @@ const MoreProject = (project: Project) => {
           <div className="col-md-6">
             <Image
               className="image"
-              src={`/${id}-thumbnail.png`}
+              src={getProjectThumbnail(id)}
               alt={id}
               fill
             />

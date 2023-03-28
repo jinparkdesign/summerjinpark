@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./../styles/project.module.css";
+import ArrowRight from "@/public/ArrowRight.png";
+import { getProjectThumbnail } from "@/lib/projectImages";
 
 const Projects = (project: Project) => {
   const { id, title, description, startYear, endYear, tags, route } = project;
@@ -38,7 +40,7 @@ const Projects = (project: Project) => {
             >
               <span className="me-2">View more</span>
               <Image
-                src="/ArrowRight.png"
+                src={ArrowRight}
                 alt="arrow right"
                 width={24}
                 height={24}
@@ -47,7 +49,12 @@ const Projects = (project: Project) => {
           </Link>
         </div>
         <div className="col-lg-4 justify-content-end d-flex position-relative">
-          <Image className="image" src={`/${id}-thumbnail.png`} alt={id} fill />
+          <Image
+            className="image"
+            src={getProjectThumbnail(id)}
+            alt={id}
+            fill
+          />
         </div>
       </div>
     </div>

@@ -9,6 +9,32 @@ const publicSans = Public_Sans({ subsets: ["latin"] });
 import styles from "../../styles/projectDetail.module.css";
 import Footer from "@/components/footer";
 import MoreProject from "@/components/Project/more-project";
+import rocketship from "@/public/rocketship.png";
+import numberOne from "@/public/number-1.png";
+import numberTwo from "@/public/number-2.png";
+import numberThree from "@/public/number-3.png";
+import fcFinalOne from "@/public/fc-final-design-implementation-1.png";
+import fcFinalTwo from "@/public/fc-final-design-implementation-2.png";
+import fcFinalThree from "@/public/fc-final-design-implementation-3.png";
+import expedia from "@/public/expedia.png";
+import prosIcon from "@/public/pros-icon.png";
+import consIcon from "@/public/cons-icon.png";
+import googleFlight from "@/public/google-flights-comparison.png";
+import navan from "@/public/navan-comparison.png";
+import fcInitialReview from "@/public/fc-initial-design-review.png";
+import fcImprovementOne from "@/public/fc-improvement-1.png";
+import fcImprovementTwo from "@/public/fc-improvement-2.png";
+import fcImprovementThree from "@/public/fc-improvement-3.png";
+import starIcon from "@/public/star-icon.png";
+import fcUsabilityOne from "@/public/fc-usability-1.png";
+import fcUsabilityTwo from "@/public/fc-usability-2.png";
+import hushedFace from "@/public/hushed-face.png";
+import relievedFace from "@/public/relieved-face.png";
+import fcDesignValidataion from "@/public/fc-design-validation.png";
+import fcDesignValidataionTwo from "@/public/fc-design-validation-2.png";
+import fcConclusion from "@/public/fc-conclusion.png";
+import checkmark from "@/public/checkmark.png";
+import militaryMedal from "@/public/military-medal.png";
 
 const FCMSplitTicketing = () => {
   const allProjects: Array<Project> = getAllProjects();
@@ -81,7 +107,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-2">
                   <Image
                     className="image"
-                    src={`/rocketship.png`}
+                    src={rocketship}
                     alt={"rocketship"}
                     fill
                   />
@@ -121,7 +147,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-1">
                   <Image
                     className="image"
-                    src={`/number-1.png`}
+                    src={numberOne}
                     alt={"number one"}
                     fill
                   />
@@ -145,7 +171,7 @@ const FCMSplitTicketing = () => {
               <div className="col-md-12 mt-2">
                 <Image
                   className="image"
-                  src={`/fc-final-design-implementation-1.png`}
+                  src={fcFinalOne}
                   alt={"number one"}
                   fill
                 />
@@ -158,7 +184,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-1">
                   <Image
                     className="image"
-                    src={`/number-2.png`}
+                    src={numberTwo}
                     alt={"number one"}
                     fill
                   />
@@ -183,7 +209,7 @@ const FCMSplitTicketing = () => {
               <div className="col-md-12 mt-2">
                 <Image
                   className="image"
-                  src={`/fc-final-design-implementation-2.png`}
+                  src={fcFinalTwo}
                   alt={"number one"}
                   fill
                 />
@@ -197,7 +223,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-1">
                   <Image
                     className="image"
-                    src={`/number-3.png`}
+                    src={numberThree}
                     alt={"number one"}
                     fill
                   />
@@ -225,7 +251,7 @@ const FCMSplitTicketing = () => {
               <div className="col-md-12 mt-2">
                 <Image
                   className="image"
-                  src={`/fc-final-design-implementation-3.png`}
+                  src={fcFinalThree}
                   alt={"number one"}
                   fill
                 />
@@ -259,7 +285,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-6">
                   <Image
                     className="image"
-                    src={`/expedia.png`}
+                    src={expedia}
                     alt={"expedia example"}
                     fill
                   />
@@ -268,7 +294,7 @@ const FCMSplitTicketing = () => {
                   {/* PROS */}
                   <div className="d-flex align-items-center">
                     <Image
-                      src={`/pros-icon.png`}
+                      src={prosIcon}
                       alt={"thumbs up"}
                       width={24}
                       height={24}
@@ -304,7 +330,7 @@ const FCMSplitTicketing = () => {
                   {/* CONS */}
                   <div className="d-flex align-items-center">
                     <Image
-                      src={`/cons-icon.png`}
+                      src={consIcon}
                       alt={"thumbs down"}
                       width={24}
                       height={24}
@@ -334,7 +360,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-6">
                   <Image
                     className="image"
-                    src={`/google-flights-comparison.png`}
+                    src={googleFlight}
                     alt={"google flights example"}
                     fill
                   />
@@ -343,7 +369,7 @@ const FCMSplitTicketing = () => {
                   {/* PROS */}
                   <div className="d-flex align-items-center">
                     <Image
-                      src={`/pros-icon.png`}
+                      src={prosIcon}
                       alt={"thumbs up"}
                       width={24}
                       height={24}
@@ -365,7 +391,7 @@ const FCMSplitTicketing = () => {
                   {/* CONS */}
                   <div className="d-flex align-items-center">
                     <Image
-                      src={`/cons-icon.png`}
+                      src={consIcon}
                       alt={"thumbs down"}
                       width={24}
                       height={24}
@@ -391,7 +417,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-6">
                   <Image
                     className="image"
-                    src={`/navan-comparison.png`}
+                    src={navan}
                     alt={"Navan example"}
                     fill
                   />
@@ -400,7 +426,7 @@ const FCMSplitTicketing = () => {
                   {/* PROS */}
                   <div className="d-flex align-items-center">
                     <Image
-                      src={`/pros-icon.png`}
+                      src={prosIcon}
                       alt={"thumbs up"}
                       width={24}
                       height={24}
@@ -422,7 +448,7 @@ const FCMSplitTicketing = () => {
                   {/* CONS */}
                   <div className="d-flex align-items-center">
                     <Image
-                      src={`/cons-icon.png`}
+                      src={consIcon}
                       alt={"thumbs down"}
                       width={24}
                       height={24}
@@ -461,7 +487,7 @@ const FCMSplitTicketing = () => {
               <div className="col-md-12 mt-5">
                 <Image
                   className="image"
-                  src={`/fc-initial-design-review.png`}
+                  src={fcInitialReview}
                   alt={"number one"}
                   fill
                 />
@@ -476,7 +502,7 @@ const FCMSplitTicketing = () => {
                 <div className="d-flex align-items-center ">
                   <Image
                     className="me-3"
-                    src={`/number-1.png`}
+                    src={numberOne}
                     alt={"number one"}
                     width={51}
                     height={51}
@@ -488,7 +514,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-12 mt-4">
                   <Image
                     className="image"
-                    src={`/fc-improvement-1.png`}
+                    src={fcImprovementOne}
                     alt={"number one"}
                     fill
                   />
@@ -529,7 +555,7 @@ const FCMSplitTicketing = () => {
                 <div className="d-flex align-items-center ">
                   <Image
                     className="me-3"
-                    src={`/number-2.png`}
+                    src={numberTwo}
                     alt={"number one"}
                     width={51}
                     height={51}
@@ -541,7 +567,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-12 mt-4">
                   <Image
                     className="image"
-                    src={`/fc-improvement-2.png`}
+                    src={fcImprovementTwo}
                     alt={"number one"}
                     fill
                   />
@@ -566,7 +592,7 @@ const FCMSplitTicketing = () => {
                 <div className="d-flex align-items-center ">
                   <Image
                     className="me-3"
-                    src={`/number-3.png`}
+                    src={numberThree}
                     alt={"number one"}
                     width={51}
                     height={51}
@@ -578,7 +604,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-9 mt-4">
                   <Image
                     className="image"
-                    src={`/fc-improvement-3.png`}
+                    src={fcImprovementThree}
                     alt={"number one"}
                     fill
                   />
@@ -621,7 +647,7 @@ const FCMSplitTicketing = () => {
 
               <div className="d-flex align-items-center my-5">
                 <Image
-                  src={`/star-icon.png`}
+                  src={starIcon}
                   alt={"star icon"}
                   width={24}
                   height={24}
@@ -635,7 +661,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-7">
                   <Image
                     className="image"
-                    src={`/fc-usability-1.png`}
+                    src={fcUsabilityOne}
                     alt={"usability testing illustration 1"}
                     fill
                   />
@@ -644,7 +670,7 @@ const FCMSplitTicketing = () => {
                   <div className="d-flex mb-3">
                     <Image
                       className="me-2"
-                      src={`/hushed-face.png`}
+                      src={hushedFace}
                       alt={"hushed face"}
                       width={60}
                       height={60}
@@ -689,7 +715,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-7">
                   <Image
                     className="image"
-                    src={`/fc-usability-2.png`}
+                    src={fcUsabilityTwo}
                     alt={"usability testing illustration 2"}
                     fill
                   />
@@ -698,7 +724,7 @@ const FCMSplitTicketing = () => {
                   <div className="d-flex mb-3">
                     <Image
                       className="me-2"
-                      src={`/relieved-face.png`}
+                      src={relievedFace}
                       alt={"hushed face"}
                       width={60}
                       height={60}
@@ -760,7 +786,7 @@ const FCMSplitTicketing = () => {
               </div>
               <div className="d-flex align-items-center my-5">
                 <Image
-                  src={`/star-icon.png`}
+                  src={starIcon}
                   alt={"star icon"}
                   width={24}
                   height={24}
@@ -779,7 +805,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-2">
                   <Image
                     className="image"
-                    src={`/fc-design-validation.png`}
+                    src={fcDesignValidataion}
                     alt={"note pad with checkmark"}
                     fill
                   />
@@ -827,7 +853,7 @@ const FCMSplitTicketing = () => {
                 <div className="col-md-6">
                   <Image
                     className="image"
-                    src={`/fc-design-validation-2.png`}
+                    src={fcDesignValidataionTwo}
                     alt={"Design Validation Illustration"}
                     fill
                   />
@@ -871,7 +897,7 @@ const FCMSplitTicketing = () => {
               <div className="col-md-12 my-5">
                 <Image
                   className="image"
-                  src={`/fc-conclusion.png`}
+                  src={fcConclusion}
                   alt={"number one"}
                   fill
                 />
@@ -882,7 +908,7 @@ const FCMSplitTicketing = () => {
                   <div className={styles.userGoalSection}>
                     <Image
                       className="me-3"
-                      src={`/checkmark.png`}
+                      src={checkmark}
                       alt={"checkmark"}
                       width={40}
                       height={40}
@@ -895,7 +921,7 @@ const FCMSplitTicketing = () => {
                   <div className={styles.userGoalSection}>
                     <Image
                       className="me-3"
-                      src={`/checkmark.png`}
+                      src={checkmark}
                       alt={"checkmark"}
                       width={40}
                       height={40}
@@ -911,7 +937,7 @@ const FCMSplitTicketing = () => {
 
               <div className="d-flex align-items-center">
                 <Image
-                  src={`/military-medal.png`}
+                  src={militaryMedal}
                   alt={"medal"}
                   width={80}
                   height={80}

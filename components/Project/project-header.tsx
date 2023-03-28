@@ -1,3 +1,4 @@
+import { getProjectMain } from "@/lib/projectImages";
 import Image from "next/image";
 import styles from "../../styles/projectDetail.module.css";
 
@@ -25,7 +26,7 @@ const ProjectHeader = (project: Project) => {
         <span>{endYear}</span>
       </div>
 
-      <Image className="image" src={`/${id}-main.png`} alt={id} fill />
+      <Image className="image" src={getProjectMain(id)} alt={id} fill />
 
       <div className="mt-4">
         <div className="row">
