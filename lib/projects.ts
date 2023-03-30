@@ -59,7 +59,7 @@ export function getAllProjects(): Array<Project> {
       endYear: "2022",
       tags: ["Responsive web", "UX/UI"],
       thumbnail: "",
-      route: "fcm-split-ticketing",
+      route: "hotel-redesign",
       role: "UX/UI Design Solo",
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "5 Months",

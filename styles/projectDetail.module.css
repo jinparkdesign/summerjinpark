@@ -167,3 +167,60 @@
   padding: 54px 34px;
   text-decoration: none;
 }
+
+.needsToBeFixedHeader {
+  font-size: 24px;
+  color: #eb5757;
+  font-weight: 700;
+}
+
+.needsFixedNumber {
+  background: #eb5757;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  color: white;
+  padding: 16px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.needsImprovementHeader {
+  font-size: 24px;
+  color: #ff9601;
+  font-weight: 700;
+}
+
+.needsImprovementNumber {
+  background: #ff714e;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  color: white;
+  padding: 16px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.hotelIdeaHeader {
+  font-size: 24px;
+  color: #34bbff;
+  font-weight: 700;
+}
+
+.hotelIdeaNumber {
+  background: #34bbff;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  color: white;
+  padding: 16px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
