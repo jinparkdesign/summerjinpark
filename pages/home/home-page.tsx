@@ -6,7 +6,6 @@ import { getAllProjects } from "@/lib/projects";
 import styles from "../../styles/Home.module.css";
 
 const HomePage = () => {
-  // TODO: fetch project data from somewhere
   const allProjects = getAllProjects();
 
   return (

@@ -12,8 +12,8 @@ const MainHeader = () => {
         <p className="mt-4 w-75 text-center fs-5">
           I am a <span className="fw-bold ">visual product designer</span> with
           a passion for creating products that people will absolutely love. With
-          2 years of experience in product design and 4 years in graphic design,
-          I bring a unique skill set that combines beautiful visuals with
+          2 years of experience in UX/UI design and 4 years in graphic design, I
+          bring a unique skill set that combines beautiful visuals with
           effective products.
         </p>
       </div>
