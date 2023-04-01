@@ -32,7 +32,11 @@ const ProjectHeader = (project: Project) => {
         <div className="row">
           <div className="col-md-3">
             <h3 className={styles.projectDetailHeader}>My Role</h3>
-            <p>{role}</p>
+            {role.map((r, i) => (
+              <p key={i} className="mb-1">
+                {r}
+              </p>
+            ))}
           </div>
           <div className="col-md-3">
             <h3 className={styles.projectDetailHeader}>Team</h3>

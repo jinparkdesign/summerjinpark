@@ -7,7 +7,7 @@ interface Project {
   tags: Array<string>;
   thumbnail: string;
   route: string;
-  role: string;
+  role: Array<string>;
   team: Array<string>;
   duration: string;
   tool: string;

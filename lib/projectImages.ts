@@ -4,6 +4,7 @@ import MiuuThumbnail from "@/public/MIUU_NOTE-thumbnail.png";
 import VisualThumbnail from "@/public/VISUAL_DESIGN-thumbnail.png";
 import FCMain from "@/public/FLIGHT_CENTER-main.png";
 import HotelMain from "@/public/HOTEL_REDESIGN-main.png";
+import MiuuMain from "@/public/MIUU_NOTE-main.png";
 import { ProjectId } from "./projects";
 
 export const getProjectThumbnail = (id: ProjectId) => {
@@ -27,6 +28,8 @@ export const getProjectMain = (id: ProjectId) => {
       return FCMain;
     case ProjectId.HOTEL_REDESIGN:
       return HotelMain;
+    case ProjectId.MIUU_NOTE:
+      return MiuuMain;
     default:
       return FCMain;
   }

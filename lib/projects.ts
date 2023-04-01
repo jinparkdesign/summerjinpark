@@ -6,20 +6,22 @@ export enum ProjectId {
 }
 
 export function getAllProjects(): Array<Project> {
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
   return [
+    {
+      id: ProjectId.MIUU_NOTE,
+      title: "Miuu Note",
+      description:
+        "Discover the joy of journaling by personalizing your diary with Miuu Note's fun stickers and background!",
+      startYear: "2022",
+      endYear: "Present",
+      tags: ["Mobile native app", "UX/UI", "Branding"],
+      thumbnail: "",
+      route: "miuu-note",
+      role: ["UX/UI Design Solo", "Identity & Branding"],
+      team: ["1 Engineer"],
+      duration: "On Going Project",
+      tool: "Figma",
+    },
     {
       id: ProjectId.FLIGHT_CENTRE,
       title: "FCM - Split Ticketing",
@@ -30,26 +32,12 @@ export function getAllProjects(): Array<Project> {
       tags: ["Responsive web", "UX/UI"],
       thumbnail: "",
       route: "fcm-split-ticketing",
-      role: "UX/UI Design Solo",
+      role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
       tool: "Figma",
     },
-    {
-      id: ProjectId.MIUU_NOTE,
-      title: "Miuu Note",
-      description:
-        "Express your daily thoughts and mood with adorable stickers",
-      startYear: "2022",
-      endYear: "Present",
-      tags: ["Mobile native app", "Product design"],
-      thumbnail: "",
-      route: "fcm-split-ticketing",
-      role: "UX/UI Design Solo",
-      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
-      duration: "7 Months",
-      tool: "Figma",
-    },
+
     {
       id: ProjectId.HOTEL_REDESIGN,
       title: "Hotel Redesign",
@@ -60,7 +48,7 @@ export function getAllProjects(): Array<Project> {
       tags: ["Responsive web", "UX/UI"],
       thumbnail: "",
       route: "hotel-redesign",
-      role: "UX/UI Design Solo",
+      role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "5 Months",
       tool: "Figma",
@@ -74,7 +62,7 @@ export function getAllProjects(): Array<Project> {
       tags: ["Visual design", "Motion design", "Graphic design"],
       thumbnail: "",
       route: "fcm-split-ticketing",
-      role: "UX/UI Design Solo",
+      role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
       tool: "Figma",
