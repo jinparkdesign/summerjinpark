@@ -2,7 +2,7 @@ import styles from "../../styles/aboutMe.module.css";
 
 const Achievement = () => {
   return (
-    <div className={styles.achievementContainer}>
+    <div className={`cotainer ${styles.achievementContainer}`}>
       <div className="row gx-5">
         <div className="col-md-6">
           <h2 className={styles.header}>My Achievements</h2>
@@ -20,7 +20,7 @@ const Achievement = () => {
             <li>Launched Android app and reached10k+ download organically</li>
           </ul>
         </div>
-        <div className="col-md-6">
+        <div className={`col-md-6 ${styles.whenNotAtWorkContainer}`}>
           <h2 className={styles.header}>When Not At Work</h2>
           <p>
             When I am not working, I enjoy creating cute digital contents like

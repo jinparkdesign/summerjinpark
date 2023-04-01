@@ -1,5 +1,7 @@
 import Link from "next/link";
 import styles from "./../styles/header.module.css";
+import mobileMenu from "@/public/mobile-menu.png";
+import Image from "next/image";
 
 const Header = ({ activePage }: { activePage: string }) => {
   return (
@@ -11,7 +13,7 @@ const Header = ({ activePage }: { activePage: string }) => {
           <span className={styles.mainLogo}>Summer Park</span>
         </a>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler border-0 transition-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -19,7 +21,7 @@ const Header = ({ activePage }: { activePage: string }) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <Image src={mobileMenu} alt={"mobileMenu"} width={32} height={32} />
         </button>
       </div>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">

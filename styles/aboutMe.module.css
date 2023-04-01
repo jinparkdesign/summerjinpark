@@ -25,3 +25,24 @@
 .achievementContainer {
   margin-top: 96px;
 }
+
+.profilePic {
+  max-width: 254px;
+}
+
+@media (max-width: 575.98px) {
+  .aboutContainer {
+    padding-left: 0px;
+    margin-top: 80px;
+  }
+
+  .whenNotAtWorkContainer {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .designJourneyContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

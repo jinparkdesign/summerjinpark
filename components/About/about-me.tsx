@@ -6,13 +6,18 @@ import MapPin from "@/public/MapPin.png";
 
 const AboutMe = () => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 container">
       <h2 className={styles.header}>About Me</h2>
 
       <div>
         <div className="row">
           <div className="col-md-3">
-            <Image src={profile} alt="Jin Park" fill className="image" />
+            <Image
+              src={profile}
+              alt="Jin Park"
+              fill
+              className={`image ${styles.profilePic}`}
+            />
 
             <div className="d-flex align-items-center mt-4">
               <Image
@@ -49,9 +54,9 @@ const AboutMe = () => {
             </p>
             <br />
             <p className={styles.aboutText}>
-              With 2 years of experience in product design and 4 years in
-              graphic design, I bring a unique skill set that combines beautiful
-              visuals with effective products.
+              With 2 years of experience in UX/UI and 4 years in graphic design,
+              I bring a unique skill set that combines beautiful visuals with
+              effective products.
             </p>
             <br />
 

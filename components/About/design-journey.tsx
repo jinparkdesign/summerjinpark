@@ -16,12 +16,15 @@ const DesignJourney = () => {
         />
       </div>
 
-      <button
-        type="button"
-        className="cta btn btn-dark mt-5 align-items-center d-flex "
+      <a
+        href="resume_summer.pdf"
+        target="_blank"
+        className="align-items-center d-flex align-self-center"
       >
-        <span className="me-2">Download Resume (PDF)</span>
-      </button>
+        <button type="button" className="cta btn btn-dark mt-5">
+          <span className="me-2">Download Resume (PDF)</span>
+        </button>
+      </a>
     </div>
   );
 };

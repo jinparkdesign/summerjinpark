@@ -7,7 +7,7 @@ import backToTop from "@/public/backToTop.png";
 const Footer = () => {
   return (
     <div
-      className={`${styles.footerContainer} d-flex flex-column justify-content-center align-items-center position-relative`}
+      className={`${styles.footerContainer} d-flex flex-column justify-content-center align-items-center position-relative text-center`}
     >
       <p>Thank you for your time! Please feel free to contact me.</p>
       <div className="d-flex">

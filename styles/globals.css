@@ -62,3 +62,8 @@ p {
 .lh-30 {
   line-height: 30px;
 }
+
+.transition-none {
+  transition: none !important;
+  box-shadow: none !important;
+}
