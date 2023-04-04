@@ -29,6 +29,14 @@
   color: #828282;
 }
 
+.tagContainer {
+  display: block;
+}
+
+.tagContainerMobile {
+  display: none;
+}
+
 .tag {
   background: #ffffff;
   border-radius: 100px;
@@ -36,4 +44,51 @@
   font-size: 14px;
   color: #4f4f4f;
   text-align: center;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+.yearTagContainer {
+  margin-bottom: 32px;
+}
+
+.ctaContainer {
+  display: block;
+}
+
+.thumbnailContainerMobile {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .projectContainer {
+    padding: 24px;
+  }
+
+  .tagContainer {
+    display: none;
+  }
+
+  .tagContainerMobile {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .yearTagContainer {
+    margin-bottom: 16px;
+  }
+
+  .thumbnailContainer {
+    display: none !important;
+  }
+
+  .ctaContainer {
+    display: none;
+  }
+
+  .thumbnailContainerMobile {
+    display: block;
+    margin-top: 24px;
+  }
 }
