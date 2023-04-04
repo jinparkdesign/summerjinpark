@@ -15,7 +15,7 @@ const HomePage = () => {
 
       <div className="row mb-3" id="work">
         <h3 className={`${styles.featuredProjectHeader} fs-6  mb-0`}>
-          Featured Projects
+          Featured UX/UI Projects
         </h3>
       </div>
 

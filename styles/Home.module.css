@@ -4,9 +4,29 @@
 
 .mainHeaderContainer {
   margin-top: 62px;
-  margin-bottom: 143px;
+  margin-bottom: 56px;
 }
 
 .projectContainer {
   margin-bottom: 32px;
+}
+
+.mainImage {
+  max-width: 500px !important;
+}
+
+/* DESKTOP */
+@media (min-width: 575.98px) {
+  .mainHeaderContainer {
+    margin-top: 62px;
+    margin-bottom: 143px;
+  }
+
+  .mainImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .mainDescription {
+    width: 75%;
+  }
 }
