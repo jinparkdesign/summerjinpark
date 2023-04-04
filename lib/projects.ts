@@ -23,26 +23,10 @@ export function getAllProjects(): Array<Project> {
       tool: "Figma",
     },
     {
-      id: ProjectId.FLIGHT_CENTRE,
-      title: "FCM - Split Ticketing",
-      description:
-        "Combine various airlines or fares in one seamless itinerary with the new enhanced air shopping capabilities  -  split ticketing! ",
-      startYear: "2022",
-      endYear: "2023",
-      tags: ["Responsive web", "UX/UI"],
-      thumbnail: "",
-      route: "fcm-split-ticketing",
-      role: ["UX/UI Design Solo"],
-      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
-      duration: "7 Months",
-      tool: "Figma",
-    },
-
-    {
       id: ProjectId.HOTEL_REDESIGN,
-      title: "Hotel Redesign",
+      title: "Melon - Hotel Rate Display Redesign",
       description:
-        "A business travel management booking platform that makes business travel easier.",
+        "Empowering travelers to make confident hotel room choices with an intuitive and optimized room display redesign",
       startYear: "2021",
       endYear: "2022",
       tags: ["Responsive web", "UX/UI"],
@@ -54,12 +38,13 @@ export function getAllProjects(): Array<Project> {
       tool: "Figma",
     },
     {
-      id: ProjectId.VISUAL_DESIGN,
-      title: "Visual Design Projects",
-      description: "My graphic and visual projects",
-      startYear: "2015",
-      endYear: "2021",
-      tags: ["Visual design", "Motion design", "Graphic design"],
+      id: ProjectId.FLIGHT_CENTRE,
+      title: "FCM - Split Ticketing",
+      description:
+        "Combine various airlines or fares in one seamless itinerary with the new enhanced air shopping capabilities  -  split ticketing! ",
+      startYear: "2022",
+      endYear: "2023",
+      tags: ["Responsive web", "UX/UI"],
       thumbnail: "",
       route: "fcm-split-ticketing",
       role: ["UX/UI Design Solo"],
