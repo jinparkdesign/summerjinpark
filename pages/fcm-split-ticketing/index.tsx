@@ -56,7 +56,7 @@ const FCMSplitTicketing = () => {
       <Head>
         <title>Summer Park</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
       </Head>
       <main className={publicSans.className}>
         <Layout>
