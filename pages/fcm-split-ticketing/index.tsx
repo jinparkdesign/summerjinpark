@@ -35,8 +35,10 @@ import fcDesignValidataionTwo from "@/public/fc-design-validation-2.png";
 import fcConclusion from "@/public/fc-conclusion.png";
 import checkmark from "@/public/checkmark.png";
 import militaryMedal from "@/public/military-medal.png";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const FCMSplitTicketing = () => {
+  const size = useWindowSize();
   const allProjects: Array<Project> = getAllProjects();
   const fcmProject = allProjects.find(
     (project) => project.id === ProjectId.FLIGHT_CENTRE
@@ -106,14 +108,18 @@ const FCMSplitTicketing = () => {
               <div className="row mt-5">
                 <div className="col-md-2">
                   <Image
-                    className="image"
+                    className={`image ${styles.thinkingFace}`}
                     src={rocketship}
                     alt={"rocketship"}
                     fill
                   />
                 </div>
                 <div className="col-md-10">
-                  <h4 className={styles.subSectionHeader}>
+                  <h4
+                    className={`${styles.subSectionHeader}  ${
+                      size.width > 576 ? "" : "mt-4"
+                    }`}
+                  >
                     We anticipate that...
                   </h4>
                   <ul className="mt-3">
@@ -143,16 +149,16 @@ const FCMSplitTicketing = () => {
 
               {/* 1. Outbound Flight Selection Page */}
               {/* Image & Bullet point component */}
-              <div className="row mt-5">
-                <div className="col-md-1">
+              <div className="mt-5 d-flex">
+                <div className="me-4">
                   <Image
-                    className="image"
                     src={numberOne}
                     alt={"number one"}
-                    fill
+                    width={54}
+                    height={54}
                   />
                 </div>
-                <div className="col-md-11">
+                <div>
                   <h4 className={styles.subSectionHeader}>
                     Outbound Flight Selection Page
                   </h4>
@@ -180,16 +186,16 @@ const FCMSplitTicketing = () => {
 
               {/* 2. Return Flight Selection Page */}
               {/* Image & Bullet point component */}
-              <div className="row mt-96">
-                <div className="col-md-1">
+              <div className="mt-5 d-flex">
+                <div className="me-4">
                   <Image
-                    className="image"
                     src={numberTwo}
-                    alt={"number one"}
-                    fill
+                    alt={"number two"}
+                    width={54}
+                    height={54}
                   />
                 </div>
-                <div className="col-md-11">
+                <div>
                   <h4 className={styles.subSectionHeader}>
                     Return Flight Selection Page
                   </h4>
@@ -219,16 +225,16 @@ const FCMSplitTicketing = () => {
 
               {/* 3. Checkout Page */}
               {/* Image & Bullet point component */}
-              <div className="row mt-96">
-                <div className="col-md-1">
+              <div className="mt-5 d-flex">
+                <div className="me-4">
                   <Image
-                    className="image"
                     src={numberThree}
-                    alt={"number one"}
-                    fill
+                    alt={"number three"}
+                    width={54}
+                    height={54}
                   />
                 </div>
-                <div className="col-md-11">
+                <div>
                   <h4 className={styles.subSectionHeader}>Checkout Page</h4>
                   <ul className="mt-3">
                     <li className="mb-3">
@@ -636,7 +642,7 @@ const FCMSplitTicketing = () => {
                 from UserTesting.com with 12 business travelers.
               </p>
 
-              <div className="d-flex">
+              <div className={`${size.width > 576 ? "d-flex" : ""} mt-5`}>
                 <div className={styles.task}>Task</div>
 
                 <p className={styles.taskLabel}>
@@ -667,7 +673,11 @@ const FCMSplitTicketing = () => {
                   />
                 </div>
                 <div className="col-md-5 d-flex flex-column justify-content-center">
-                  <div className="d-flex mb-3">
+                  <div
+                    className={`d-flex mb-3 ${
+                      size.width > 576 ? "" : "mt-3 mb-3"
+                    } `}
+                  >
                     <Image
                       className="me-2"
                       src={hushedFace}
@@ -675,7 +685,7 @@ const FCMSplitTicketing = () => {
                       width={60}
                       height={60}
                     />
-                    <span className={styles.improvementSectionSubHeader}>
+                    <span className={`${styles.improvementSectionSubHeader} `}>
                       Layout issue in the fare rules section
                     </span>
                   </div>
@@ -721,7 +731,11 @@ const FCMSplitTicketing = () => {
                   />
                 </div>
                 <div className="col-md-5 d-flex flex-column justify-content-center">
-                  <div className="d-flex mb-3">
+                  <div
+                    className={`d-flex mb-3 ${
+                      size.width > 576 ? "" : "mt-3 mb-3"
+                    } `}
+                  >
                     <Image
                       className="me-2"
                       src={relievedFace}
@@ -776,7 +790,7 @@ const FCMSplitTicketing = () => {
                 with 9 clients with our clients by using a QA beta site, to
                 collect their initial reactions to the actual search results.
               </p>
-              <div className="d-flex">
+              <div className={`${size.width > 576 ? "d-flex" : ""} mt-5`}>
                 <div className={styles.task}>Task</div>
 
                 <p className={styles.taskLabel}>
@@ -804,7 +818,7 @@ const FCMSplitTicketing = () => {
               <div className="row gx-5 mt-5">
                 <div className="col-md-2">
                   <Image
-                    className="image"
+                    className="image desktop"
                     src={fcDesignValidataion}
                     alt={"note pad with checkmark"}
                     fill
@@ -850,7 +864,7 @@ const FCMSplitTicketing = () => {
               </p>
 
               <div className="row gx-5">
-                <div className="col-md-6">
+                <div className={`col-md-6 ${size.width > 576 ? "" : "mb-4"}`}>
                   <Image
                     className="image"
                     src={fcDesignValidataionTwo}
@@ -935,18 +949,26 @@ const FCMSplitTicketing = () => {
                 Achieving User metrics
               </p>
 
-              <div className="d-flex align-items-center">
+              <div
+                className={`${
+                  size.width > 576 ? "d-flex" : ""
+                }  align-items-center`}
+              >
                 <Image
                   src={militaryMedal}
                   alt={"medal"}
                   width={80}
                   height={80}
                 />
-                <span className={`${styles.header} ms-3`}>
+                <div
+                  className={`${styles.header} ${
+                    size.width > 576 ? "ms-3" : "mt-3"
+                  }`}
+                >
                   We increased CSAT score from 7.2 to{" "}
                   <span className={styles.purple}> 7.9 </span> after the
                   implementation{" "}
-                </span>
+                </div>
               </div>
 
               <p className={`${styles.fs20fwbold} mt-5 `}>What I learned... </p>
