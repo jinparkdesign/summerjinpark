@@ -28,6 +28,11 @@
   margin-bottom: 16px;
 }
 
+.fontChivo {
+  font-family: "Chivo";
+  font-weight: 400;
+}
+
 .projectDetailContainer {
   margin-top: 80px;
 }
@@ -266,4 +271,58 @@
   line-height: 36px;
   color: #2f80ed;
   text-decoration-line: underline;
+}
+
+@media (max-width: 575.98px) {
+  .durationContainer {
+    margin-bottom: 32px;
+  }
+
+  .thinkingFace {
+    max-width: 134px;
+  }
+
+  .thinkingFaceContainer {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  .miuuConclusion1 {
+    background-color: #f3f9e4;
+    padding: 32px 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .miuuConclusion2 {
+    background-color: #fffcf5;
+    padding: 32px 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .miuuConclusion3 {
+    background-color: #fff9f9;
+    padding: 32px 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .miuuConclusion4 {
+    background-color: #eff7fb;
+    padding: 32px 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .miuuConclusion5 {
+    background-color: #f0f3f1;
+    padding: 32px 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .miuuDownloadLink {
+    font-size: 24px;
+  }
 }

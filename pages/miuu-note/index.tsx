@@ -51,9 +51,13 @@ import miuuMiniNote from "@/public/miuu-mini-note.png";
 import linkImg from "@/public/link.png";
 import MoreProject from "@/components/Project/more-project";
 
+import useWindowSize from "@/hooks/useWindowSize";
+
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
 export default function HotelRedesignPage() {
+  const size = useWindowSize();
+
   const allProjects: Array<Project> = getAllProjects();
   const fcmProject = allProjects.find(
     (project) => project.id === ProjectId.FLIGHT_CENTRE
@@ -105,16 +109,16 @@ export default function HotelRedesignPage() {
                 diary writing experience more enjoyable and fun.
               </p>
               <div className="row mt-5">
-                <div className="col-md-2">
+                <div className={`col-md-2 ${styles.thinkingFaceContainer}`}>
                   <Image
-                    className="image"
+                    className={`image ${styles.thinkingFace}`}
                     src={thinkingFace}
                     alt={"thinkingFace"}
                     fill
                   />
                 </div>
                 <div className="col-md-10 d-flex flex-column justify-content-center">
-                  <h4 className="fs-36">
+                  <h4 className={`fs-36 ${styles.fontChivo}`}>
                     “I want to develop an app that transforms daily writing into
                     a <span className="fw-bold">fun, engaging,</span> and
                     <span className="fw-bold">customizable</span> experience
@@ -152,7 +156,9 @@ export default function HotelRedesignPage() {
                   </div>
                 </div>
                 <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <div className="d-flex ms-32">
+                  <div
+                    className={`d-flex ${size.width > 576 ? "ms-32" : "mt-4"} `}
+                  >
                     <Image
                       className="me-3"
                       src={numberOne}
@@ -160,7 +166,7 @@ export default function HotelRedesignPage() {
                       width={44}
                       height={44}
                     />
-                    <h4 className={styles.subSectionHeader}>
+                    <h4 className={styles.improvementSectionSub}>
                       Create a diary app that encourages users to write daily
                       entries by offering a unique daily reward system.
                     </h4>
@@ -184,7 +190,9 @@ export default function HotelRedesignPage() {
                   </div>
                 </div>
                 <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <div className="d-flex ms-32">
+                  <div
+                    className={`d-flex ${size.width > 576 ? "ms-32" : "mt-4"} `}
+                  >
                     <Image
                       className="me-3"
                       src={numberTwo}
@@ -192,7 +200,7 @@ export default function HotelRedesignPage() {
                       width={44}
                       height={44}
                     />
-                    <h4 className={styles.subSectionHeader}>
+                    <h4 className={styles.improvementSectionSub}>
                       Provide a wide selection of adorable stickers more than
                       340+, allowing users to express their emotions in a more
                       engaging and personalized way.
@@ -217,7 +225,9 @@ export default function HotelRedesignPage() {
                   </div>
                 </div>
                 <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <div className="d-flex ms-32">
+                  <div
+                    className={`d-flex ${size.width > 576 ? "ms-32" : "mt-4"} `}
+                  >
                     <Image
                       className="me-3"
                       src={numberThree}
@@ -225,7 +235,7 @@ export default function HotelRedesignPage() {
                       width={44}
                       height={44}
                     />
-                    <h4 className={styles.subSectionHeader}>
+                    <h4 className={styles.improvementSectionSub}>
                       Implement additional features such as customizable
                       backgrounds and stickers to enhance the user's experience
                       and make diary writing more enjoyable.
@@ -250,7 +260,9 @@ export default function HotelRedesignPage() {
                   </div>
                 </div>
                 <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <div className="d-flex ms-32">
+                  <div
+                    className={`d-flex ${size.width > 576 ? "ms-32" : "mt-4"} `}
+                  >
                     <Image
                       className="me-3"
                       src={numberFour}
@@ -258,7 +270,7 @@ export default function HotelRedesignPage() {
                       width={44}
                       height={44}
                     />
-                    <h4 className={styles.subSectionHeader}>
+                    <h4 className={styles.improvementSectionSub}>
                       Users can categorize their journals into different folders
                       based on themes or topics using the grouping feature.
                     </h4>
@@ -287,7 +299,9 @@ export default function HotelRedesignPage() {
                   />
                 </div>
                 <div className="col-md-7 d-flex flex-column justify-content-center">
-                  <p className="ms-5 fs-16">
+                  <p
+                    className={` fs-16 ${size.width > 576 ? "ms-5" : "mt-3"} `}
+                  >
                     I conducted an online survey{" "}
                     <span className={styles.fs20fwbold}>
                       targeting female teenagers between the ages of 10 - 19
@@ -306,7 +320,7 @@ export default function HotelRedesignPage() {
               <div className={`row mt-5 mb-2 ${styles.miuuConclusion1}`}>
                 <div className="col-md-2">
                   <Image
-                    className="image pe-5"
+                    className="image pe-5 desktop"
                     src={miuuConclusion1}
                     alt={"miuuConclusion1"}
                     fill
@@ -327,7 +341,7 @@ export default function HotelRedesignPage() {
               <div className={`row mb-2 ${styles.miuuConclusion2}`}>
                 <div className="col-md-2">
                   <Image
-                    className="image pe-5"
+                    className="image pe-5 desktop"
                     src={miuuConclusion2}
                     alt={"miuuConclusion2"}
                     fill
@@ -346,7 +360,7 @@ export default function HotelRedesignPage() {
               <div className={`row mb-2 ${styles.miuuConclusion3}`}>
                 <div className="col-md-2">
                   <Image
-                    className="image pe-5"
+                    className="image pe-5 desktop"
                     src={miuuConclusion3}
                     alt={"miuuConclusion3"}
                     fill
@@ -373,7 +387,7 @@ export default function HotelRedesignPage() {
               <div className={`row mb-2 ${styles.miuuConclusion4}`}>
                 <div className="col-md-2">
                   <Image
-                    className="image pe-5"
+                    className="image pe-5 desktop"
                     src={miuuConclusion4}
                     alt={"miuuConclusion4"}
                     fill
@@ -397,7 +411,7 @@ export default function HotelRedesignPage() {
               <div className={`row mb-2 ${styles.miuuConclusion5}`}>
                 <div className="col-md-2">
                   <Image
-                    className="image pe-5"
+                    className="image pe-5 desktop"
                     src={miuuConclusion5}
                     alt={"miuuConclusion5"}
                     fill
@@ -424,7 +438,9 @@ export default function HotelRedesignPage() {
               </div>
 
               <div
-                className={`mb-3 d-flex align-items-center ${styles.designValidationSectionQuote}`}
+                className={`mb-3 d-flex ${
+                  size.width > 576 ? "align-items-center" : ""
+                }  ${styles.designValidationSectionQuote}`}
               >
                 <Image
                   className="me-3"
@@ -441,7 +457,9 @@ export default function HotelRedesignPage() {
               </div>
 
               <div
-                className={`mb-3 d-flex align-items-center ${styles.designValidationSectionQuote}`}
+                className={`mb-3 d-flex ${
+                  size.width > 576 ? "align-items-center" : ""
+                } ${styles.designValidationSectionQuote}`}
               >
                 <Image
                   className="me-3"
@@ -457,7 +475,9 @@ export default function HotelRedesignPage() {
               </div>
 
               <div
-                className={`mb-3 d-flex align-items-center ${styles.designValidationSectionQuote}`}
+                className={`mb-3 d-flex ${
+                  size.width > 576 ? "align-items-center" : ""
+                } ${styles.designValidationSectionQuote}`}
               >
                 <Image
                   className="me-3"
@@ -533,7 +553,11 @@ export default function HotelRedesignPage() {
                   </div>
                   {/* ---- */}
                   {/* Luan Diary */}
-                  <div className="col-md-6 d-flex ps-40">
+                  <div
+                    className={`col-md-6 d-flex ${
+                      size.width > 576 ? "ps-40" : "mt-5"
+                    }`}
+                  >
                     <Image
                       src={miuuLunaDiary}
                       alt={"miuuLunaDiary"}
@@ -712,7 +736,11 @@ export default function HotelRedesignPage() {
                     fill
                   />
                 </div>
-                <div className="col-md-4 ps-40 d-flex flex-column justify-content-center">
+                <div
+                  className={`col-md-4 d-flex flex-column justify-content-center ${
+                    size.width > 576 ? "ps-40" : "mt-4"
+                  }`}
+                >
                   <p className={styles.fs24fwbold}>
                     Make sticker collector page more immersive and fun.
                   </p>
@@ -749,7 +777,12 @@ export default function HotelRedesignPage() {
                     fill
                   />
                 </div>
-                <div className="col-md-4 ps-40 d-flex flex-column justify-content-center">
+                <div
+                  className={`col-md-4 d-flex flex-column justify-content-center ${
+                    size.width > 576 ? "ps-40" : "mt-4"
+                  }`}
+                >
+                  {" "}
                   <p className={styles.fs24fwbold}>
                     Main page improvements by prioritizing user needs.{" "}
                   </p>
@@ -782,7 +815,12 @@ export default function HotelRedesignPage() {
                     fill
                   />
                 </div>
-                <div className="col-md-4 ps-40 d-flex flex-column justify-content-center">
+                <div
+                  className={`col-md-4 d-flex flex-column justify-content-center ${
+                    size.width > 576 ? "ps-40" : "mt-4"
+                  }`}
+                >
+                  {" "}
                   <p className={styles.fs24fwbold}>
                     Enhance diary functions and make them organized.
                   </p>
@@ -893,7 +931,7 @@ export default function HotelRedesignPage() {
                 </a>
               </div>
 
-              <p className={`${styles.fs20fwbold} `}>Next Step</p>
+              <p className={`${styles.fs20fwbold} `}>Next Steps</p>
 
               <div
                 className={`mb-3 d-flex ${styles.designValidationSectionQuote}`}

@@ -23,6 +23,10 @@ p {
   margin-top: 88px !important;
 }
 
+.mt-80 {
+  margin-top: 80px !important;
+}
+
 .mt-122 {
   margin-top: 122px !important;
 }
@@ -66,4 +70,22 @@ p {
 .transition-none {
   transition: none !important;
   box-shadow: none !important;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
 }

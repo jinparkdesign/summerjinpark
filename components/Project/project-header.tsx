@@ -28,8 +28,8 @@ const ProjectHeader = (project: Project) => {
 
       <Image className="image" src={getProjectMain(id)} alt={id} fill />
 
-      <div className="mt-4">
-        <div className="row">
+      <div className="desktop">
+        <div className="row mt-4">
           <div className="col-md-3">
             <h3 className={styles.projectDetailHeader}>My Role</h3>
             {role.map((r, i) => (
@@ -51,6 +51,34 @@ const ProjectHeader = (project: Project) => {
             <p>{duration}</p>
           </div>
           <div className="col-md-3">
+            <h3 className={styles.projectDetailHeader}>Tool</h3>
+            <p>{tool}</p>
+          </div>
+        </div>
+      </div>
+      <div className="mobile">
+        <div className="row mt-4">
+          <div className="col-6 mb-4">
+            <h3 className={styles.projectDetailHeader}>My Role</h3>
+            {role.map((r, i) => (
+              <p key={i} className="mb-1">
+                {r}
+              </p>
+            ))}
+          </div>
+          <div className="col-6">
+            <h3 className={styles.projectDetailHeader}>Team</h3>
+            {team.map((team, i) => (
+              <p key={i} className="mb-1">
+                {team}
+              </p>
+            ))}
+          </div>
+          <div className="col-6">
+            <h3 className={styles.projectDetailHeader}>Duration</h3>
+            <p>{duration}</p>
+          </div>
+          <div className="col-6">
             <h3 className={styles.projectDetailHeader}>Tool</h3>
             <p>{tool}</p>
           </div>
