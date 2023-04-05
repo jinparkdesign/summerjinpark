@@ -66,7 +66,7 @@ const ProjectHeader = (project: Project) => {
               </p>
             ))}
           </div>
-          <div className="col-6">
+          <div className="col-6 mb-4">
             <h3 className={styles.projectDetailHeader}>Team</h3>
             {team.map((team, i) => (
               <p key={i} className="mb-1">

@@ -37,10 +37,13 @@ import hotelConclusion from "@/public/hotel-conclusion.png";
 import militaryMedal from "@/public/military-medal.png";
 import MoreProject from "@/components/Project/more-project";
 import Footer from "@/components/footer";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
 export default function HotelRedesignPage() {
+  const size = useWindowSize();
+
   const allProjects: Array<Project> = getAllProjects();
   const fcmProject = allProjects.find(
     (project) => project.id === ProjectId.FLIGHT_CENTRE
@@ -99,16 +102,17 @@ export default function HotelRedesignPage() {
 
               {/* 1. Improved Photo Display */}
               {/* Image & Bullet point component */}
-              <div className="row mt-5">
-                <div className="col-md-1">
+              <div className="mt-5 d-flex">
+                <div className="me-4">
                   <Image
-                    className="image"
                     src={numberOne}
                     alt={"number one"}
-                    fill
+                    width={54}
+                    height={54}
                   />
                 </div>
-                <div className="col-md-11">
+
+                <div>
                   <h4 className={styles.subSectionHeader}>
                     Improved Photo Display
                   </h4>
@@ -136,16 +140,16 @@ export default function HotelRedesignPage() {
 
               {/* 2. Simplified Hotel Description and Amenity Display */}
               {/* Image & Bullet point component */}
-              <div className="row mt-5">
-                <div className="col-md-1">
+              <div className="mt-5 d-flex">
+                <div className="me-4">
                   <Image
-                    className="image"
                     src={numberTwo}
                     alt={"number two"}
-                    fill
+                    width={54}
+                    height={54}
                   />
                 </div>
-                <div className="col-md-11">
+                <div>
                   <h4 className={styles.subSectionHeader}>
                     Simplified Hotel Description and Amenity Display
                   </h4>
@@ -177,16 +181,16 @@ export default function HotelRedesignPage() {
 
               {/* 3. Compact Hotel Map Display */}
               {/* Image & Bullet point component */}
-              <div className="row mt-5">
-                <div className="col-md-1">
+              <div className="mt-5 d-flex">
+                <div className="me-4">
                   <Image
-                    className="image"
                     src={numberThree}
                     alt={"number three"}
-                    fill
+                    width={54}
+                    height={54}
                   />
                 </div>
-                <div className="col-md-11">
+                <div>
                   <h4 className={styles.subSectionHeader}>
                     Compact Hotel Map Display
                   </h4>
@@ -215,16 +219,16 @@ export default function HotelRedesignPage() {
 
               {/* 4. Simplified UI with Clear Payment and Cancellation Information */}
               {/* Image & Bullet point component */}
-              <div className="row mt-5">
-                <div className="col-md-1">
+              <div className="d-flex  mt-5">
+                <div className="me-4">
                   <Image
-                    className="image"
                     src={numberFour}
                     alt={"number Four"}
-                    fill
+                    width={54}
+                    height={54}
                   />
                 </div>
-                <div className="col-md-11">
+                <div>
                   <h4 className={styles.subSectionHeader}>
                     Simplified UI with Clear Payment and Cancellation
                     Information
@@ -260,16 +264,16 @@ export default function HotelRedesignPage() {
 
               {/* 5. Improved Room Display with Best Room Options and Room Types */}
               {/* Image & Bullet point component */}
-              <div className="row mt-5">
-                <div className="col-md-1">
+              <div className="d-flex mt-5">
+                <div className="me-4">
                   <Image
-                    className="image"
                     src={numberFive}
                     alt={"number five"}
-                    fill
+                    width={54}
+                    height={54}
                   />
                 </div>
-                <div className="col-md-11">
+                <div>
                   <h4 className={styles.subSectionHeader}>
                     Improved Room Display with Best Room Options and Room Types
                   </h4>
@@ -310,13 +314,15 @@ export default function HotelRedesignPage() {
                 Gathering insights from user testing and clients
               </p>
 
-              <p>
+              <p className="mt-3 mb-5">
                 We conducted an unmoderated test with{" "}
                 <span className="fw-bold"> 8 business travellers </span>
                 recruited from UserTesting to gather insights about:
               </p>
 
-              <div className={`mb-3 ${styles.designValidationSectionQuote}`}>
+              <div
+                className={`mb-3 d-flex align-items-center ${styles.designValidationSectionQuote}`}
+              >
                 <Image
                   className="me-2"
                   alt="Magnifying Glass"
@@ -328,7 +334,9 @@ export default function HotelRedesignPage() {
                 bed size, price) so that we can design around that?
               </div>
 
-              <div className={`mb-3 ${styles.designValidationSectionQuote}`}>
+              <div
+                className={`mb-3 d-flex align-items-center ${styles.designValidationSectionQuote}`}
+              >
                 <Image
                   className="me-2"
                   alt="Magnifying Glass"
@@ -339,7 +347,9 @@ export default function HotelRedesignPage() {
                 What are travelers' priorities when choosing a hotel room?
               </div>
 
-              <div className={`mb-3 ${styles.designValidationSectionQuote}`}>
+              <div
+                className={`mb-3 d-flex align-items-center ${styles.designValidationSectionQuote}`}
+              >
                 <Image
                   className="me-2"
                   alt="Magnifying Glass"
@@ -352,9 +362,9 @@ export default function HotelRedesignPage() {
 
               {/* Image & Bullet point component */}
               <div className="row mt-5">
-                <div className="col-md-2">
+                <div className={`col-md-2 ${styles.thinkingFaceContainer}`}>
                   <Image
-                    className="image"
+                    className={`image ${styles.thinkingFace}`}
                     src={thinkingFace}
                     alt={"thinkingFace"}
                     fill
@@ -382,7 +392,7 @@ export default function HotelRedesignPage() {
                 </div>
               </div>
 
-              <div className="d-flex mt-5">
+              <div className={`${size.width > 576 ? "d-flex" : ""} mt-5`}>
                 <div className={styles.task}>Task</div>
 
                 <p className={styles.taskLabel}>
@@ -515,7 +525,7 @@ export default function HotelRedesignPage() {
                   />
                 </div>
                 <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <p>
+                  <p className={`${size.width > 576 ? "" : "mt-5"}`}>
                     <span className="fw-bold">
                       Grouped by Room Type & Payment{" "}
                     </span>
@@ -576,7 +586,7 @@ export default function HotelRedesignPage() {
                   />
                 </div>
                 <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <p>
+                  <p className={`${size.width > 576 ? "" : "mt-5"}`}>
                     <span className="fw-bold">
                       Grouped by Room Type & Refunability
                     </span>
@@ -635,7 +645,7 @@ export default function HotelRedesignPage() {
                   />
                 </div>
                 <div className="col-md-6 d-flex flex-column justify-content-center">
-                  <p>
+                  <p className={`${size.width > 576 ? "" : "mt-5"}`}>
                     <span className="fw-bold">Grouped by Room Type & Rate</span>
                   </p>
                   {/* PROS */}
@@ -966,18 +976,28 @@ export default function HotelRedesignPage() {
                 Achieving User metrics
               </p>
 
-              <div className="d-flex align-items-center">
-                <Image
-                  src={militaryMedal}
-                  alt={"medal"}
-                  width={80}
-                  height={80}
-                />
-                <span className={`${styles.header} ms-3`}>
+              <div
+                className={`${
+                  size.width > 576 ? "d-flex" : ""
+                }  align-items-center`}
+              >
+                <div>
+                  <Image
+                    src={militaryMedal}
+                    alt={"medal"}
+                    width={80}
+                    height={80}
+                  />
+                </div>
+                <div
+                  className={`${styles.header} ${
+                    size.width > 576 ? "ms-3" : "mt-3"
+                  }`}
+                >
                   We increased CSAT score from 6.9 to{" "}
                   <span className={styles.purple}> 7.5 </span> after the
                   implementation{" "}
-                </span>
+                </div>
               </div>
 
               <p className={`${styles.fs20fwbold} mt-5 `}>What I learned... </p>

@@ -82,10 +82,10 @@ p {
 
 @media (max-width: 575.98px) {
   .desktop {
-    display: none;
+    display: none !important;
   }
 
   .mobile {
-    display: block;
+    display: block !important;
   }
 }
