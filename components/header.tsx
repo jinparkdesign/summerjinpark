@@ -9,9 +9,9 @@ const Header = ({ activePage }: { activePage: string }) => {
       className={`navbar sticky-top navbar-expand-md navbar-light ${styles.navContainer}`}
     >
       <div className="container-fluid ps-0">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" href="/">
           <span className={styles.mainLogo}>Summer Park</span>
-        </a>
+        </Link>
         <button
           className="navbar-toggler border-0 transition-none"
           type="button"
