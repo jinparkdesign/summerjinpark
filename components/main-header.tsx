@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./../styles/Home.module.css";
 import main from "@/public/main.png";
+import Link from "next/link";
 
 const MainHeader = () => {
   return (
@@ -22,7 +23,10 @@ const MainHeader = () => {
           a passion for creating products that people will absolutely love. With
           2 years of experience in UX/UI design and 4 years in graphic design, I
           bring a unique skill set that combines beautiful visuals with
-          effective products.
+          effective products.{" "}
+          <Link className={styles.moreLink} href={"about"}>
+            More about me
+          </Link>
         </p>
       </div>
     </>

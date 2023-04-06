@@ -15,6 +15,10 @@
   max-width: 500px !important;
 }
 
+.moreLink {
+  color: #7e52ff;
+}
+
 /* DESKTOP */
 @media (min-width: 575.98px) {
   .mainHeaderContainer {
