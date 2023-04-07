@@ -116,9 +116,3 @@
   bottom: 15px;
   right: 15px;
 }
-
-@media (min-width: 767.8px) and (max-width: 1200px) {
-  .portfolio .portfolioWrap {
-    max-height: 167px;
-  }
-}
