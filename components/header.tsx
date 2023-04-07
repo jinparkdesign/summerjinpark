@@ -37,7 +37,7 @@ const Header = ({ activePage }: { activePage: string }) => {
           </Link>
           {activePage === "home" ? (
             <a className={`nav-link ${styles.navItem}`} href="#work">
-              Work
+              UX/UI
             </a>
           ) : (
             <Link
@@ -47,7 +47,23 @@ const Header = ({ activePage }: { activePage: string }) => {
               aria-current="page"
               href="/#work"
             >
-              Work
+              UX/UI
+            </Link>
+          )}
+
+          {activePage === "home" ? (
+            <a className={`nav-link ${styles.navItem}`} href="#visual">
+              Visual
+            </a>
+          ) : (
+            <Link
+              className={`nav-link ${styles.navItem} ${
+                activePage === "home" ? styles.activeNavItem : ""
+              } `}
+              aria-current="page"
+              href="/#visual"
+            >
+              Visual
             </Link>
           )}
 
