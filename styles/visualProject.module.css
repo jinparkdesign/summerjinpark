@@ -122,9 +122,3 @@
     max-height: 167px;
   }
 }
-
-@media (min-width: 1199.8px) {
-  .portfolio .portfolioWrap {
-    max-height: 200px;
-  }
-}
