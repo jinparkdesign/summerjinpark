@@ -3,6 +3,14 @@ export enum ProjectId {
   MIUU_NOTE = "MIUU_NOTE",
   HOTEL_REDESIGN = "HOTEL_REDESIGN",
   VISUAL_DESIGN = "VISUAL_DESIGN",
+  HUG_MUG = "HUG_MUG",
+  ECYCLE = "ECYCLE",
+  PARK_YOUR_PHONE = "PARK_YOUR_PHONE",
+  SIGN = "SIGN",
+  TIKTOK = "TIKTOK",
+  SAVE_MY_FRIDGE = "SAVE_MY_FRIDGE",
+  ANDROID_3D = "ANDROID_3D",
+  VISUAL_SHAPE = "VISUAL_SHAPE",
 }
 
 export function getAllProjects(): Array<Project> {
@@ -46,6 +54,123 @@ export function getAllProjects(): Array<Project> {
       endYear: "2023",
       tags: ["Responsive web", "UX/UI"],
       thumbnail: "",
+      route: "fcm-split-ticketing",
+      role: ["UX/UI Design Solo"],
+      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
+      duration: "7 Months",
+      tool: "Figma",
+    },
+  ];
+}
+
+export function getAllVisualProjects(): Array<Project> {
+  return [
+    {
+      id: ProjectId.HUG_MUG,
+      title: "HUG MUG Brand Book Design",
+      description: "Branding & Layout | 2020",
+      startYear: "2022", //not used
+      endYear: "2023", //not used
+      tags: ["Responsive web", "UX/UI"], //not used
+      thumbnail: "", //not used
+      route: "fcm-split-ticketing",
+      role: ["UX/UI Design Solo"],
+      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
+      duration: "7 Months",
+      tool: "Figma",
+    },
+    {
+      id: ProjectId.ECYCLE,
+      title: "eCycle Mobile App Design",
+      description: "UX/UI Case Study | 2020",
+      startYear: "2022", //not used
+      endYear: "2023", //not used
+      tags: ["Responsive web", "UX/UI"], //not used
+      thumbnail: "", //not used
+      route: "fcm-split-ticketing",
+      role: ["UX/UI Design Solo"],
+      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
+      duration: "7 Months",
+      tool: "Figma",
+    },
+    {
+      id: ProjectId.PARK_YOUR_PHONE,
+      title: "Park Your Phone",
+      description: "Graphic & Motion Design | 2020",
+      startYear: "2022", //not used
+      endYear: "2023", //not used
+      tags: ["Responsive web", "UX/UI"], //not used
+      thumbnail: "", //not used
+      route: "fcm-split-ticketing",
+      role: ["UX/UI Design Solo"],
+      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
+      duration: "7 Months",
+      tool: "Figma",
+    },
+    {
+      id: ProjectId.SIGN,
+      title: "Signage Design @ Fastsigns",
+      description: "Graphic & Print Design | 2016-2018",
+      startYear: "2022", //not used
+      endYear: "2023", //not used
+      tags: ["Responsive web", "UX/UI"], //not used
+      thumbnail: "", //not used
+      route: "fcm-split-ticketing",
+      role: ["UX/UI Design Solo"],
+      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
+      duration: "7 Months",
+      tool: "Figma",
+    },
+    {
+      id: ProjectId.TIKTOK,
+      title: "Tiktok Logo Reveal",
+      description: "Video Editing & Motion Design | 2020",
+      startYear: "2022", //not used
+      endYear: "2023", //not used
+      tags: ["Responsive web", "UX/UI"], //not used
+      thumbnail: "", //not used
+      route: "fcm-split-ticketing",
+      role: ["UX/UI Design Solo"],
+      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
+      duration: "7 Months",
+      tool: "Figma",
+    },
+    {
+      id: ProjectId.SAVE_MY_FRIDGE,
+      title: "Save My Fridge Mobile App Design",
+      description: "UX/UI Case Study | 2020",
+      startYear: "2022", //not used
+      endYear: "2023", //not used
+      tags: ["Responsive web", "UX/UI"], //not used
+      thumbnail: "", //not used
+      route: "fcm-split-ticketing",
+      role: ["UX/UI Design Solo"],
+      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
+      duration: "7 Months",
+      tool: "Figma",
+    },
+    {
+      id: ProjectId.ANDROID_3D,
+      title: "Android 3D Modeling",
+      description: "3D & Animation | 2020",
+      startYear: "2022", //not used
+      endYear: "2023", //not used
+      tags: ["Responsive web", "UX/UI"], //not used
+      thumbnail: "", //not used
+      route: "fcm-split-ticketing",
+      role: ["UX/UI Design Solo"],
+      team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
+      duration: "7 Months",
+      tool: "Figma",
+    },
+    {
+      id: ProjectId.VISUAL_SHAPE,
+      title: "Visual Rhetoric Shape Morph",
+      description: "Motion Graphic | 2020",
+      startYear: "2022", //not used
+      endYear: "2023", //not used
+      tags: ["Responsive web", "UX/UI"], //not used
+      thumbnail: "", //not used
       route: "fcm-split-ticketing",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
+    require("jquery");
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 

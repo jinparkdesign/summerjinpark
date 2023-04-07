@@ -1,0 +1,130 @@
+.portfolio .portfolioWrap {
+  max-height: 234px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.portfolio .portfolioWrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(69, 80, 91, 0.8);
+}
+
+.portfolio .portfolioWrap::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolioWrap .portfolioInfo {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolioWrap .portfolioInfo::before {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolioWrap .portfolioInfo::after {
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.portfolio .portfolioWrap .portfolioInfo h4 {
+  font-size: 20px;
+  color: lemonchiffon;
+  font-weight: 600;
+}
+
+.portfolio .portfolioWrap .portfolioInfo p {
+  color: lemonchiffon;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio .portfolioWrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolioWrap .portfolio-links a {
+  color: #45505b;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolioWrap .portfolio-links a:hover {
+  color: #148af9;
+}
+
+.portfolio .portfolioWrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolioWrap:hover .portfolioInfo {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.portfolio .portfolioWrap:hover .portfolioInfo::before {
+  top: 15px;
+  left: 15px;
+}
+
+.portfolio .portfolioWrap:hover .portfolioInfo::after {
+  bottom: 15px;
+  right: 15px;
+}
+
+@media (min-width: 767.8px) and (max-width: 1200px) {
+  .portfolio .portfolioWrap {
+    max-height: 167px;
+  }
+}
+
+@media (min-width: 1199.8px) {
+  .portfolio .portfolioWrap {
+    max-height: 200px;
+  }
+}
