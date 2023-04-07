@@ -32,7 +32,7 @@ const HomePage = () => {
 
       <div className="row mb-3" id="visual">
         <h3 className={`${styles.featuredProjectHeader} fs-6  mb-0`}>
-          Featured Visual Projects
+          Featured Visual Projects (Under Construction)
         </h3>
       </div>
 
