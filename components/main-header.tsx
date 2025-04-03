@@ -19,7 +19,7 @@ const MainHeader = () => {
           />
         </div>
         <p className={`mt-4 text-center fs-5 ${styles.mainDescription}`}>
-          I am a <span className="fw-bold ">visual product designer</span> with
+          I am a <span className="fw-bold ">Social Media Marketer & Designer</span> with
           a passion for creating products that people will absolutely love. With
           2 years of experience in UX/UI design and 4 years in graphic design, I
           bring a unique skill set that combines beautiful visuals with

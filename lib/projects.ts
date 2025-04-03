@@ -73,7 +73,7 @@ export function getAllVisualProjects(): Array<Project> {
       endYear: "2023", //not used
       tags: ["Responsive web", "UX/UI"], //not used
       thumbnail: "", //not used
-      route: "fcm-split-ticketing",
+      route: "/projects/hug-mug.html",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
@@ -87,7 +87,7 @@ export function getAllVisualProjects(): Array<Project> {
       endYear: "2023", //not used
       tags: ["Responsive web", "UX/UI"], //not used
       thumbnail: "", //not used
-      route: "fcm-split-ticketing",
+      route: "/projects/project.html",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
@@ -101,7 +101,7 @@ export function getAllVisualProjects(): Array<Project> {
       endYear: "2023", //not used
       tags: ["Responsive web", "UX/UI"], //not used
       thumbnail: "", //not used
-      route: "fcm-split-ticketing",
+      route: "/projects/when-you-drive.html",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
@@ -115,7 +115,7 @@ export function getAllVisualProjects(): Array<Project> {
       endYear: "2023", //not used
       tags: ["Responsive web", "UX/UI"], //not used
       thumbnail: "", //not used
-      route: "fcm-split-ticketing",
+      route: "/projects/signage.html",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
@@ -129,7 +129,7 @@ export function getAllVisualProjects(): Array<Project> {
       endYear: "2023", //not used
       tags: ["Responsive web", "UX/UI"], //not used
       thumbnail: "", //not used
-      route: "fcm-split-ticketing",
+      route: "/projects/tiktok-logo-reveal.html",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
@@ -143,7 +143,7 @@ export function getAllVisualProjects(): Array<Project> {
       endYear: "2023", //not used
       tags: ["Responsive web", "UX/UI"], //not used
       thumbnail: "", //not used
-      route: "fcm-split-ticketing",
+      route: "/projects/save-my-fridge.html",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
@@ -157,7 +157,7 @@ export function getAllVisualProjects(): Array<Project> {
       endYear: "2023", //not used
       tags: ["Responsive web", "UX/UI"], //not used
       thumbnail: "", //not used
-      route: "fcm-split-ticketing",
+      route: "/projects/Android-3d.html",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",
@@ -171,7 +171,7 @@ export function getAllVisualProjects(): Array<Project> {
       endYear: "2023", //not used
       tags: ["Responsive web", "UX/UI"], //not used
       thumbnail: "", //not used
-      route: "fcm-split-ticketing",
+      route: "/projects/visual-rhetoric.html",
       role: ["UX/UI Design Solo"],
       team: ["1 Product Manager", "4 Engineers", "1 UX Researcher"],
       duration: "7 Months",

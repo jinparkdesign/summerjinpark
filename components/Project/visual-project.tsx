@@ -1,12 +1,18 @@
 import Image from "next/image";
 import styles from "../../styles/visualProject.module.css";
 import { getProjectThumbnail } from "@/lib/projectImages";
+import { useRouter } from 'next/router';
 
 const VisualProjects = (project: Project) => {
   const { id, title, description, startYear, endYear, tags, route } = project;
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(route);
+  };
 
   return (
-    <div className={`col-lg-4 col-md-6 portfolio ${styles.portfolio}`}>
+    <div onClick={handleClick} className={`col-lg-4 col-md-6 portfolio ${styles.portfolio}`}>
       <div className={`${styles.portfolioWrap}`}>
         <Image
           className="image"
