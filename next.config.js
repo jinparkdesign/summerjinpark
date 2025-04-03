@@ -1,6 +1,4 @@
 const nextConfig = {
-  basePath: "/summerjinpark",
-  output: "export",
   reactStrictMode: true,
 };
 
