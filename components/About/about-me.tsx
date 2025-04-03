@@ -42,37 +42,24 @@ const AboutMe = () => {
                 className="me-4"
               />
 
-              <span className={styles.emailText}>Toronto, Canada</span>
+              <span className={styles.emailText}>New York</span>
             </div>
           </div>
 
           <div className={`col-md-9 ${styles.aboutContainer}`}>
             <p className={styles.aboutText}>
-              👋 Hello and welcome! My name is Summer Park. I am a passionate
-              visual product designer dedicated to creating products that people
-              will absolutely love!
+            Hi there! I’m a Social Media Marketer & Visual Designer who loves creating eye-catching visuals and engaging content. 🎨📱
             </p>
-            <br />
             <p className={styles.aboutText}>
-              With 2 years of experience in UX/UI and 4 years in graphic design,
-              I bring a unique skill set that combines beautiful visuals with
-              effective products.
+            From social media strategy to design, I enjoy bringing brands to life with unique storytelling and creative visuals. I specialize in content creation, trend analysis, and branding, making sure each piece resonates with the audience in a fun and meaningful way.
             </p>
-            <br />
 
             <p className={styles.aboutText}>
-              My approach to design is centered around the user. I believe that
-              design should not only be aesthetically pleasing but should also
-              enhance the user experience. By considering the user's needs and
-              preferences, I strive to create designs that are both beautiful
-              and functional.
+            I also create various animations and comics featuring my character, Miuu, developing original content and character IPs along the way. My goal is to blend design and marketing to craft visually appealing and impactful content.
             </p>
-            <br />
 
             <p className={styles.aboutText}>
-              Thank you for taking the time to learn more about me and my work.
-              I am excited to collaborate with you and bring your design vision
-              to life!
+            📩 Let’s connect and create something amazing together! 😊
             </p>
           </div>
         </div>

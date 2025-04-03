@@ -9,25 +9,23 @@ const MainHeader = () => {
       <div
         className={`${styles.mainHeaderContainer} d-flex flex-column align-items-center`}
       >
-        {/* FULL WIDTH IMAGE */}
-        <div className={`w-100 mt-4 ${styles.mainImageContainer}`}>
-          <Image
-            className={`image ${styles.mainImage}`}
-            src={main}
-            alt={"Hi there, I am Summer Park"}
-            fill
-          />
-        </div>
-        <p className={`mt-4 text-center fs-5 ${styles.mainDescription}`}>
-          I am a <span className="fw-bold ">Social Media Marketer & Designer</span> with
-          a passion for creating products that people will absolutely love. With
-          2 years of experience in UX/UI design and 4 years in graphic design, I
-          bring a unique skill set that combines beautiful visuals with
-          effective products.{" "}
-          <Link className={styles.moreLink} href={"about"}>
-            More about me
-          </Link>
+        <p className={`mt-4 mb-0 text-center fs-1 ${styles.mainDescription}`}>
+          👋 Hi, I'm Summer Park.
         </p>
+        <p className={`mt-4 mb-0 text-center fs-1 ${styles.mainDescription}`}>
+          I am a <span className="fw-bold ">Social Media Marketer & Designer.</span> I create engaging digital experiences through content, branding, design and storytelling.
+        </p>
+
+        <p className={`mt-3 text-center fs-6 ${styles.mainDescription}`}>
+          <span className="badge me-1 rounded-pill" style={{ backgroundColor: '#F1F5F9', color: '#64748B' }}>Branding</span>
+          <span className="badge me-1 rounded-pill" style={{ backgroundColor: '#F1F5F9', color: '#64748B' }}>Content Creation</span>
+          <span className="badge me-1 rounded-pill" style={{ backgroundColor: '#F1F5F9', color: '#64748B' }}>Marketing Strategy</span>
+          <span className="badge me-1 rounded-pill" style={{ backgroundColor: '#F1F5F9', color: '#64748B' }}>Visual Design</span>
+          <span className="badge me-1 rounded-pill" style={{ backgroundColor: '#F1F5F9', color: '#64748B' }}>UX/UI Design</span>
+          <span className="badge me-1 rounded-pill" style={{ backgroundColor: '#F1F5F9', color: '#64748B' }}>Animation</span>
+          <span className="badge me-1 rounded-pill" style={{ backgroundColor: '#F1F5F9', color: '#64748B' }}>Social Media Growth</span>
+        </p>
+           
       </div>
     </>
   );
