@@ -75,6 +75,14 @@ const Header = ({ activePage }: { activePage: string }) => {
           >
             About
           </Link>
+          <Link
+            className={`nav-link ${styles.navItem} ${
+              activePage === "content-design" ? styles.activeNavItem : ""
+            }`}
+            href="/content-design"
+          >
+            Content Design
+          </Link>
         </div>
       </div>
     </nav>
